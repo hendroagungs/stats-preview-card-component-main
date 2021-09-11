@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      width:1440px;
+      background-color: hsl(233, 47%, 7%);
+      font-size: 25px;
+      font-family: 'Inter', sans-serif;
+    }
+    .container{
+      width:70%;
+      height: 446px;
+      background-color: hsl(244, 38%, 16%);
+      margin: auto;
+      margin-top: 100px;
+      margin-bottom: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: 
+        "txt image"
+        "txt2 image"
+        "txt3 image";
+    }
+    .item-a{
+      grid-area: txt;
+    }
+    .item-b{
+      grid-area: image;
+    }
+    .item-c{
+      grid-area: txt2;
+    }
+    .item-d{
+      grid-area: txt3;
+    }
+    .text-area{
+      margin:40px 30px 70px 70px;
+      color: white;
+    }
+    .mini-container{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    h1{
+      font-size: 1.4em;
+    }
+    h3{
+      font-size: 0.8em;
+      font-family:'Lexend Deca', sans-serif;
+    }
+    h4{
+      font-size: 0.4em;
+      margin-right: 120px;
+      font-weight: 200;
+      word-spacing: 3px;
+      line-height: 20px;
+      margin-bottom: 80px;
+    }
+    span{
+      color:hsl(277, 64%, 61%);
+    }
+    h3 span{
+      color:white;
+      font-size: 0.7em;
+      font-weight: 100;
+    }
+    .attribution { font-size: 11px; text-align: center;color:white;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text-area">
+      <h1 class="item-a">Get <span>insights</span> that help your business grow.</h1>
+      <h4 class="item-c">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</h4>
+      <div class="mini-container">
+        <h3 class="item-d">
+          <h3>10k+ <br><span>companies</span></h3>
+          <h3>314 <br><span>templates</span></h3>
+          <h3>12m+ <br><span>queries</span></h3>
+      </h3>
+      </div>
+    </div>
+    <img src="images/image-header-desktop.jpg" class="item-b">
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Hendro Agung Setiawan</a>.
+  </div>
+</body>
+</html>
