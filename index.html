@@ -40,6 +40,7 @@
     }
     .item-b{
       grid-area: image;
+      z-index:1;
     }
     .item-c{
       grid-area: txt2;
@@ -78,6 +79,12 @@
       font-size: 0.7em;
       font-weight: 100;
     }
+    .layercolor{
+      background-color:hsla(277, 64%, 61%,0.6);
+      width:540px;
+      height:446px;
+      z-index:99;
+    }
     .attribution { font-size: 11px; text-align: center;color:white;}
     .attribution a { color: hsl(228, 45%, 44%); }
     
@@ -97,7 +104,9 @@
       </h3>
       </div>
     </div>
+    <div class="layercolor item-b"></div>
     <img src="images/image-header-desktop.jpg" class="item-b">
+    
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
